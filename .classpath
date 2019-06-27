@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
-	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry output="bin/main" kind="src" path="src/main/java">
 		<attributes>
 			<attribute name="gradle_scope" value="main"/>
@@ -30,6 +29,7 @@
 			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="E:\Java\MC\Shades of Nether\1.14.2\ShadesOfNether\build\natives"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
 	<classpathentry sourcepath="C:/Users/Pyrosshade/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.14.2-26.0.63_mapped_snapshot_20190621-1.14.2/forge-1.14.2-26.0.63_mapped_snapshot_20190621-1.14.2-sources.jar" kind="lib" path="C:/Users/Pyrosshade/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.14.2-26.0.63_mapped_snapshot_20190621-1.14.2/forge-1.14.2-26.0.63_mapped_snapshot_20190621-1.14.2-recomp.jar">
 		<attributes>

@@ -6,4 +6,6 @@ public class ModBlocks {
 	
 	@ObjectHolder("shadesofnether:claycacoon")
 	public static ClayCacoon CLAYCACOON;
+	@ObjectHolder("shadesofnether:petribark_mushroom")
+	public static PetribarkMushroom PETRIBARK_MUSHROOM;
 }
