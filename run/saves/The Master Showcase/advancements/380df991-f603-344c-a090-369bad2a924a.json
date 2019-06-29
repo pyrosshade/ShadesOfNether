@@ -252,6 +252,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/brewing/golden_carrot": {
+    "criteria": {
+      "has_gold_nugget": "2019-06-28 19:10:06 -0400"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cut_sandstone_slab_from_sandstone_stonecutting": {
     "criteria": {
       "has_sandstone": "2019-06-24 19:59:38 -0400"
@@ -573,6 +579,7 @@
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:skeleton": "2019-06-24 20:07:37 -0400",
+      "minecraft:zombie_pigman": "2019-06-28 19:10:05 -0400",
       "minecraft:spider": "2019-06-24 21:10:02 -0400",
       "minecraft:creeper": "2019-06-24 20:56:01 -0400",
       "minecraft:witch": "2019-06-26 00:15:53 -0400",

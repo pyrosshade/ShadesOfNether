@@ -8,4 +8,8 @@ public class ModBlocks {
 	public static ClayCacoon CLAYCACOON;
 	@ObjectHolder("shadesofnether:petribark_mushroom")
 	public static PetribarkMushroom PETRIBARK_MUSHROOM;
+	@ObjectHolder("shadesofnether:petribark_mushroom_cap")
+	public static PetribarkMushroomCap PETRIBARK_MUSHROOM_CAP;
+	@ObjectHolder("shadesofnether:petribark_mushroom_stem")
+	public static PetribarkMushroomStem PETRIBARK_MUSHROOM_STEM;
 }

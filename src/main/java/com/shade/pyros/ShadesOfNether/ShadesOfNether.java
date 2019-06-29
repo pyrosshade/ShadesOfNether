@@ -7,6 +7,8 @@ import org.apache.logging.log4j.Logger;
 import com.shade.pyros.ShadesOfNether.Blocks.ClayCacoon;
 import com.shade.pyros.ShadesOfNether.Blocks.ModBlocks;
 import com.shade.pyros.ShadesOfNether.Blocks.PetribarkMushroom;
+import com.shade.pyros.ShadesOfNether.Blocks.PetribarkMushroomCap;
+import com.shade.pyros.ShadesOfNether.Blocks.PetribarkMushroomStem;
 import com.shade.pyros.ShadesOfNether.Items.ClayEgg;
 import com.shade.pyros.ShadesOfNether.Setup.ModSetup;
 
@@ -49,6 +51,8 @@ public class ShadesOfNether {
 		public static void onBlockRegistry(final RegistryEvent.Register<Block> event) {
 			event.getRegistry().register(new ClayCacoon());		
 			event.getRegistry().register(new PetribarkMushroom());
+			event.getRegistry().register(new PetribarkMushroomCap());
+			event.getRegistry().register(new PetribarkMushroomStem());
 			}
 		@SubscribeEvent
 		public static void onItemRegistry(final RegistryEvent.Register<Item> event) {
@@ -56,7 +60,8 @@ public class ShadesOfNether {
 			//Block items
 			event.getRegistry().register(new BlockItem(ModBlocks.CLAYCACOON, properties).setRegistryName("claycacoon"));
 			event.getRegistry().register(new BlockItem(ModBlocks.PETRIBARK_MUSHROOM, properties).setRegistryName("petribark_mushroom"));
-			
+			event.getRegistry().register(new BlockItem(ModBlocks.PETRIBARK_MUSHROOM_CAP, properties).setRegistryName("petribark_mushroom_cap"));
+			event.getRegistry().register(new BlockItem(ModBlocks.PETRIBARK_MUSHROOM_STEM, properties).setRegistryName("petribark_mushroom_stem"));
 			//Item items
 			event.getRegistry().register(new ClayEgg());
 		}

@@ -16,11 +16,15 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.IWorldReader;
 import net.minecraft.world.World;
+import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
+import net.minecraft.world.gen.feature.IFeatureConfig;
+import net.minecraft.world.gen.placement.IPlacementConfig;
+import net.minecraft.world.gen.placement.Placement;
 
 public class PetribarkMushroom extends BushBlock implements IGrowable{
 
-	protected static final VoxelShape SHAPE = Block.makeCuboidShape(5.0D, 0.0D, 5.0D, 11.0D, 6.0D, 11.0D);
+	protected static final VoxelShape SHAPE = Block.makeCuboidShape(4.0D, 0.0D, 4.0D, 12.0D, 15.0D, 12.0D);
 
 	public PetribarkMushroom() {
 		super(Properties.from(Blocks.BROWN_MUSHROOM));
@@ -35,7 +39,6 @@ public class PetribarkMushroom extends BushBlock implements IGrowable{
 	public void tick(BlockState state, World worldIn, BlockPos pos, Random random) {
 		if (random.nextInt(25) == 0) {
 			int i = 5;
-			int j = 4;
 
 			for(BlockPos blockpos : BlockPos.getAllInBoxMutable(pos.add(-4, -1, -4), pos.add(4, 1, 4))) {
 					if (worldIn.getBlockState(blockpos).getBlock() == this) {
@@ -81,7 +84,7 @@ public class PetribarkMushroom extends BushBlock implements IGrowable{
 
 	public boolean generateBigMushroom(IWorld worldIn, BlockPos pos, BlockState state, Random rand) {
 		worldIn.removeBlock(pos, false);
-		ConfiguredFeature<?> feature = Features.HUGE_PETRIBARK_MUSHROOM;
+		ConfiguredFeature<?> feature = Biome.createDecoratedFeature(Features.HUGE_PETRIBARK_MUSHROOM,IFeatureConfig.NO_FEATURE_CONFIG,Placement.DARK_OAK_TREE,IPlacementConfig.NO_PLACEMENT_CONFIG);
 
 		if (feature != null && feature.place(worldIn, worldIn.getChunkProvider().getChunkGenerator(), rand, pos)) {
 			return true;
