@@ -276,6 +276,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/birch_planks": {
+    "criteria": {
+      "has_log": "2019-06-30 01:30:06 -0400"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/chiseled_sandstone_from_sandstone_stonecutting": {
     "criteria": {
       "has_sandstone": "2019-06-24 19:59:38 -0400"
@@ -462,6 +468,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2019-06-30 01:30:06 -0400"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/green_stained_glass_pane": {
     "criteria": {
       "has_glass": "2019-06-25 23:14:53 -0400"
@@ -580,9 +592,13 @@
     "criteria": {
       "minecraft:skeleton": "2019-06-24 20:07:37 -0400",
       "minecraft:zombie_pigman": "2019-06-28 19:10:05 -0400",
+      "minecraft:ghast": "2019-06-29 21:10:08 -0400",
+      "minecraft:magma_cube": "2019-06-29 23:10:57 -0400",
       "minecraft:spider": "2019-06-24 21:10:02 -0400",
       "minecraft:creeper": "2019-06-24 20:56:01 -0400",
+      "minecraft:phantom": "2019-06-30 16:29:29 -0400",
       "minecraft:witch": "2019-06-26 00:15:53 -0400",
+      "minecraft:wither_skeleton": "2019-06-29 23:12:03 -0400",
       "minecraft:husk": "2019-06-25 23:13:26 -0400",
       "minecraft:enderman": "2019-06-26 20:47:09 -0400",
       "minecraft:zombie": "2019-06-26 00:16:22 -0400"

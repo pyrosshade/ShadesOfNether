@@ -99,7 +99,7 @@ key_key.jei.nextPage:key.keyboard.unknown
 key_key.jei.bookmark:key.keyboard.t
 key_key.jei.toggleBookmarkOverlay:key.keyboard.unknown
 soundCategory_master:0.20364238
-soundCategory_music:0.09507042
+soundCategory_music:0.21830986
 soundCategory_record:0.5
 soundCategory_weather:0.50352114
 soundCategory_block:0.5070422

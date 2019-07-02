@@ -28,7 +28,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class ShadesOfNether {
 	public static ShadesOfNether instance;
 	public static final String modid = "shadesofnether";
-	private static final Logger debug = LogManager.getLogger(modid);
+	public static final Logger debug = LogManager.getLogger(modid);
 	
 	public static ModSetup setup = new ModSetup();
 	public ShadesOfNether() {

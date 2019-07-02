@@ -16,11 +16,8 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.IWorldReader;
 import net.minecraft.world.World;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.IFeatureConfig;
-import net.minecraft.world.gen.placement.IPlacementConfig;
-import net.minecraft.world.gen.placement.Placement;
+import net.minecraft.world.gen.feature.BigMushroomFeatureConfig;
+import net.minecraft.world.gen.feature.Feature;
 
 public class PetribarkMushroom extends BushBlock implements IGrowable{
 
@@ -84,9 +81,9 @@ public class PetribarkMushroom extends BushBlock implements IGrowable{
 
 	public boolean generateBigMushroom(IWorld worldIn, BlockPos pos, BlockState state, Random rand) {
 		worldIn.removeBlock(pos, false);
-		ConfiguredFeature<?> feature = Biome.createDecoratedFeature(Features.HUGE_PETRIBARK_MUSHROOM,IFeatureConfig.NO_FEATURE_CONFIG,Placement.DARK_OAK_TREE,IPlacementConfig.NO_PLACEMENT_CONFIG);
+		Feature<BigMushroomFeatureConfig> feature = Features.HUGE_PETRIBARK_MUSHROOM;
 
-		if (feature != null && feature.place(worldIn, worldIn.getChunkProvider().getChunkGenerator(), rand, pos)) {
+		if (feature != null && feature.place(worldIn, worldIn.getChunkProvider().getChunkGenerator(), rand, pos, new BigMushroomFeatureConfig(true))) {
 			return true;
 		} else {
 			worldIn.setBlockState(pos, state, 3);

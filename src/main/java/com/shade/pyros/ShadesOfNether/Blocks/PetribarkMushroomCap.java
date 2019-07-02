@@ -1,7 +1,6 @@
 package com.shade.pyros.ShadesOfNether.Blocks;
 
 import net.minecraft.block.HugeMushroomBlock;
-import net.minecraft.block.MushroomBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
