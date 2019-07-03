@@ -1,6 +1,6 @@
 {
     "parent": "block/cross",
     "textures": {
-        "cross": "shadesofnether:items/petribark_mushroom"
+        "cross": "shadesofnether:item/petribark_mushroom"
     }
 }

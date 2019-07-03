@@ -6,10 +6,23 @@ import org.apache.logging.log4j.Logger;
 
 import com.shade.pyros.ShadesOfNether.Blocks.ClayCacoon;
 import com.shade.pyros.ShadesOfNether.Blocks.ModBlocks;
+import com.shade.pyros.ShadesOfNether.Blocks.PetribarkButton;
+import com.shade.pyros.ShadesOfNether.Blocks.PetribarkDoor;
+import com.shade.pyros.ShadesOfNether.Blocks.PetribarkFence;
+import com.shade.pyros.ShadesOfNether.Blocks.PetribarkFenceGate;
+import com.shade.pyros.ShadesOfNether.Blocks.PetribarkLadder;
 import com.shade.pyros.ShadesOfNether.Blocks.PetribarkMushroom;
 import com.shade.pyros.ShadesOfNether.Blocks.PetribarkMushroomCap;
 import com.shade.pyros.ShadesOfNether.Blocks.PetribarkMushroomStem;
+import com.shade.pyros.ShadesOfNether.Blocks.PetribarkPlanks;
+import com.shade.pyros.ShadesOfNether.Blocks.PetribarkPressurePlate;
+import com.shade.pyros.ShadesOfNether.Blocks.PetribarkSign;
+import com.shade.pyros.ShadesOfNether.Blocks.PetribarkSlab;
+import com.shade.pyros.ShadesOfNether.Blocks.PetribarkStairs;
+import com.shade.pyros.ShadesOfNether.Blocks.PetribarkTrapdoor;
+import com.shade.pyros.ShadesOfNether.Blocks.PetribarkWallSign;
 import com.shade.pyros.ShadesOfNether.Items.ClayEgg;
+import com.shade.pyros.ShadesOfNether.Items.PetribarkStick;
 import com.shade.pyros.ShadesOfNether.Setup.ModSetup;
 
 import net.minecraft.block.Block;
@@ -53,6 +66,18 @@ public class ShadesOfNether {
 			event.getRegistry().register(new PetribarkMushroom());
 			event.getRegistry().register(new PetribarkMushroomCap());
 			event.getRegistry().register(new PetribarkMushroomStem());
+			event.getRegistry().register(new PetribarkPlanks());
+			event.getRegistry().register(new PetribarkSlab());
+			event.getRegistry().register(new PetribarkStairs());
+			//event.getRegistry().register(new PetribarkLadder());
+			//event.getRegistry().register(new PetribarkButton());
+			//event.getRegistry().register(new PetribarkDoor());
+			//event.getRegistry().register(new PetribarkFence());
+			//event.getRegistry().register(new PetribarkFenceGate());
+			//event.getRegistry().register(new PetribarkPressurePlate());
+			//event.getRegistry().register(new PetribarkSign());
+			//event.getRegistry().register(new PetribarkTrapdoor());
+			//event.getRegistry().register(new PetribarkWallSign());
 			}
 		@SubscribeEvent
 		public static void onItemRegistry(final RegistryEvent.Register<Item> event) {
@@ -62,8 +87,21 @@ public class ShadesOfNether {
 			event.getRegistry().register(new BlockItem(ModBlocks.PETRIBARK_MUSHROOM, properties).setRegistryName("petribark_mushroom"));
 			event.getRegistry().register(new BlockItem(ModBlocks.PETRIBARK_MUSHROOM_CAP, properties).setRegistryName("petribark_mushroom_cap"));
 			event.getRegistry().register(new BlockItem(ModBlocks.PETRIBARK_MUSHROOM_STEM, properties).setRegistryName("petribark_mushroom_stem"));
+			event.getRegistry().register(new BlockItem(ModBlocks.PETRIBARK_PLANKS, properties).setRegistryName("petribark_planks"));
+			event.getRegistry().register(new BlockItem(ModBlocks.PETRIBARK_SLAB, properties).setRegistryName("petribark_slab"));
+			event.getRegistry().register(new BlockItem(ModBlocks.PETRIBARK_STAIRS, properties).setRegistryName("petribark_stairs"));
+			//event.getRegistry().register(new BlockItem(ModBlocks.PETRIBARK_BUTTON, properties).setRegistryName("petribark_button"));
+			//event.getRegistry().register(new BlockItem(ModBlocks.PETRIBARK_SIGN, properties).setRegistryName("petribark_sign"));
+			//event.getRegistry().register(new BlockItem(ModBlocks.PETRIBARK_DOOR, properties).setRegistryName("petribark_door"));
+			//event.getRegistry().register(new BlockItem(ModBlocks.PETRIBARK_FENCE, properties).setRegistryName("petribark_fence"));
+			//event.getRegistry().register(new BlockItem(ModBlocks.PETRIBARK_FENCEGATE, properties).setRegistryName("petribark_fencegate"));
+			//event.getRegistry().register(new BlockItem(ModBlocks.PETRIBARK_LADDER, properties).setRegistryName("petribark_ladder"));
+			//event.getRegistry().register(new BlockItem(ModBlocks.PETRIBARK_TRAPDOOR, properties).setRegistryName("petribark_trapdoor"));
+			//event.getRegistry().register(new BlockItem(ModBlocks.PETRIBARK_WALL_SIGN, properties).setRegistryName("petribark_wall_sign"));
+			//event.getRegistry().register(new BlockItem(ModBlocks.PETRIBARK_PRESSURE_PLATE, properties).setRegistryName("petribark_pressure_plate"));
 			//Item items
 			event.getRegistry().register(new ClayEgg());
+			event.getRegistry().register(new PetribarkStick());
 		}
 	}
 }

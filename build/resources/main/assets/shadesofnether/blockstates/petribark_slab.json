@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "shadesofnether:block/petribark_slab" },
+        "type=top": { "model": "shadesofnether:block/petribark_slab_top" },
+        "type=double": { "model": "shadesofnether:block/petribark_planks" }
+    }
+}

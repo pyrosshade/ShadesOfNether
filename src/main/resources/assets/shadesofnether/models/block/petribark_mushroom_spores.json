@@ -1,8 +1,8 @@
 {
     "ambientocclusion": false,
     "textures": {
-        "texture": "shadesofnether:blocks/petribark_mushroom_spores",
-        "particle": "shadesofnether:blocks/petribark_mushroom_spores"
+        "texture": "shadesofnether:block/petribark_mushroom_spores",
+        "particle": "shadesofnether:block/petribark_mushroom_spores"
     },
     "elements": [
         {   "from": [ 0, 0, 0 ],

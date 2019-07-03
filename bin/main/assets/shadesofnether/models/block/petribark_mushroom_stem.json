@@ -1,7 +1,7 @@
 {
     "textures": {
-        "texture": "shadesofnether:blocks/petribark_mushroom_stem",
-        "particle": "shadesofnether:blocks/petribark_mushroom_stem"
+        "texture": "shadesofnether:block/petribark_mushroom_stem",
+        "particle": "shadesofnether:block/petribark_mushroom_stem"
     },
     "elements": [
         {   "from": [ 0, 0, 0 ],
