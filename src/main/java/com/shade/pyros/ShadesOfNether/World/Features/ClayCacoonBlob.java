@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.function.Function;
 
 import com.mojang.datafixers.Dynamic;
-import com.shade.pyros.ShadesOfNether.Blocks.ModBlocks;
+import com.shade.pyros.ShadesOfNether.ObjectHolders.ModBlocks;
 
 import net.minecraft.block.Blocks;
 import net.minecraft.util.Direction;

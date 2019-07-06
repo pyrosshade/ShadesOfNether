@@ -1,4 +1,4 @@
-version:1963
+version:1968
 autoJump:false
 autoSuggestions:true
 chatColors:true
@@ -87,19 +87,8 @@ key_key.hotbar.6:key.keyboard.6
 key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
-key_key.jei.toggleOverlay:key.keyboard.unknown
-key_key.jei.focusSearch:key.keyboard.unknown
-key_key.jei.toggleCheatMode:key.keyboard.unknown
-key_key.jei.toggleEditMode:key.keyboard.unknown
-key_key.jei.showRecipe:key.keyboard.r
-key_key.jei.showUses:key.keyboard.u
-key_key.jei.recipeBack:key.keyboard.unknown
-key_key.jei.previousPage:key.keyboard.unknown
-key_key.jei.nextPage:key.keyboard.unknown
-key_key.jei.bookmark:key.keyboard.t
-key_key.jei.toggleBookmarkOverlay:key.keyboard.unknown
-soundCategory_master:0.20364238
-soundCategory_music:0.21830986
+soundCategory_master:0.04304636
+soundCategory_music:0.03521127
 soundCategory_record:0.5
 soundCategory_weather:0.50352114
 soundCategory_block:0.5070422

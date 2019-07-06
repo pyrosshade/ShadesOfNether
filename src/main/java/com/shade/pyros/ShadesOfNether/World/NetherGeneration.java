@@ -1,6 +1,6 @@
 package com.shade.pyros.ShadesOfNether.World;
 
-import com.shade.pyros.ShadesOfNether.Blocks.ModBlocks;
+import com.shade.pyros.ShadesOfNether.ObjectHolders.ModBlocks;
 import com.shade.pyros.ShadesOfNether.World.Features.Features;
 
 import net.minecraft.world.biome.Biome;

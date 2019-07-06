@@ -9,6 +9,9 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BushBlock;
 import net.minecraft.block.IGrowable;
+import net.minecraft.state.IntegerProperty;
+import net.minecraft.state.StateContainer;
+import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
@@ -22,9 +25,11 @@ import net.minecraft.world.gen.feature.Feature;
 public class PetribarkMushroom extends BushBlock implements IGrowable{
 
 	protected static final VoxelShape SHAPE = Block.makeCuboidShape(4.0D, 0.0D, 4.0D, 12.0D, 15.0D, 12.0D);
+	   public static final IntegerProperty STAGE = BlockStateProperties.STAGE_0_1;
 
 	public PetribarkMushroom() {
 		super(Properties.from(Blocks.BROWN_MUSHROOM));
+	      this.setDefaultState(this.stateContainer.getBaseState().with(STAGE, Integer.valueOf(0)));
 		setRegistryName("petribark_mushroom");
 	}
 
@@ -61,6 +66,8 @@ public class PetribarkMushroom extends BushBlock implements IGrowable{
 				worldIn.setBlockState(blockpos1, state, 2);
 			}
 		}
+		if (!worldIn.isAreaLoaded(pos, 1)) return;
+		this.grow(worldIn, random, pos, state);
 
 	}
 
@@ -103,10 +110,18 @@ public class PetribarkMushroom extends BushBlock implements IGrowable{
 	}
 
 	public void grow(World worldIn, Random rand, BlockPos pos, BlockState state) {
+		if (state.get(STAGE) == 0) {
+	         worldIn.setBlockState(pos, state.cycle(STAGE), 4);
+	      } else {
 		this.generateBigMushroom(worldIn, pos, state, rand);
+	      }
 	}
 
 	public boolean needsPostProcessing(BlockState state, IBlockReader worldIn, BlockPos pos) {
 		return true;
 	}
+
+	   protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
+	      builder.add(STAGE);
+	   }
 }

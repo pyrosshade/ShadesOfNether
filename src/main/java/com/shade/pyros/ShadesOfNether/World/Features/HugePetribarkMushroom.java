@@ -7,7 +7,7 @@ import org.apache.logging.log4j.Level;
 import com.google.common.base.Function;
 import com.mojang.datafixers.Dynamic;
 import com.shade.pyros.ShadesOfNether.ShadesOfNether;
-import com.shade.pyros.ShadesOfNether.Blocks.ModBlocks;
+import com.shade.pyros.ShadesOfNether.ObjectHolders.ModBlocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

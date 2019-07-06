@@ -1,15 +1,18 @@
 package com.shade.pyros.ShadesOfNether.Blocks;
 
+import com.shade.pyros.ShadesOfNether.Common.Materials;
+
 import net.minecraft.block.HugeMushroomBlock;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialColor;
 
 public class PetribarkMushroomCap extends HugeMushroomBlock{
 
 	public PetribarkMushroomCap() {
-		super(Properties.create(Material.WOOD, MaterialColor.DIRT).hardnessAndResistance(0.2F).sound(SoundType.WOOD));
+		super(Properties
+				.create(Materials.PETRIBARK_WOOD)
+				.hardnessAndResistance(0.45F)
+				.sound(SoundType.WOOD)
+				);
 		setRegistryName("petribark_mushroom_cap");
 	}
-
 }

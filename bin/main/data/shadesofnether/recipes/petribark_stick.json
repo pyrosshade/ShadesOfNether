@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "shadesofnether:petribark_planks"
+    }
+  ],
+  "result":
+  {
+    "item": "shadesofnether:petribark_stick",
+    "count": 2
+  }
+}
