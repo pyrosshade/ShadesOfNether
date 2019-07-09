@@ -115,7 +115,7 @@ public class ShadesOfNether {
 		@SubscribeEvent
 		public static void onRegisterContainerType(final RegistryEvent.Register<ContainerType<?>> event) {
 				event.getRegistry().registerAll(
-						new ContainerType<>(VanillaWorkBench::new).setRegistryName("vanilla_crafting_table")
+						new ContainerType<>(VanillaWorkBench::new).setRegistryName("vanilla_workbench")
 						);
 		}
 	}

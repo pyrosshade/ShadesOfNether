@@ -16,13 +16,11 @@ public class PetribarkPatch extends Feature<NoFeatureConfig>{
 
 	public PetribarkPatch(Function<Dynamic<?>, ? extends NoFeatureConfig> configFactoryIn) {
 		super(configFactoryIn);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public boolean place(IWorld worldIn, ChunkGenerator<? extends GenerationSettings> generator, Random rand,
 			BlockPos pos, NoFeatureConfig config) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
