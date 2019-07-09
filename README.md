@@ -1,5 +1,5 @@
-<p align="center"><img src="https://lh3.googleusercontent.com/FWa0QMSFP0IRGr4BScd7vrEcKjqboE_LRoK2YPajbUuYgrRmvDKQU8IfzMhpb7oljVpmpO8-P3OZ"></p> 
+Shades of Nether is a forge mod for 1.14.3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3ODcyMzAxNSw2ODE0MzkyNDUsMTkwNj
-IyMzE4XX0=
+eyJoaXN0b3J5IjpbLTEwMDQ0NjcxMzksMjA3ODcyMzAxNSw2OD
+E0MzkyNDUsMTkwNjIyMzE4XX0=
 -->
