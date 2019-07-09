@@ -1,5 +1,7 @@
-Shades of Nether is a forge mod for 1.14.3 
+Shades of Nether adds content to the nether
+Curseforge project can be found [here](https://www.curseforge.com/minecraft/mc-mods/shades-of-nether)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NTIzMjY2MywyMDc4NzIzMDE1LDY4MT
-QzOTI0NSwxOTA2MjIzMThdfQ==
+eyJoaXN0b3J5IjpbMzIwMTc0MzExLDIwNzg3MjMwMTUsNjgxND
+M5MjQ1LDE5MDYyMjMxOF19
 -->
