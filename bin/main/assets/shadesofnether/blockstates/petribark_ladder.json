@@ -1,8 +1,0 @@
-{
-    "variants": {
-        "facing=north": { "model": "shadesofnether:block/petribark_ladder" },
-        "facing=east":  { "model": "shadesofnether:block/petribark_ladder", "y": 90 },
-        "facing=south": { "model": "shadesofnether:block/petribark_ladder", "y": 180 },
-        "facing=west":  { "model": "shadesofnether:block/petribark_ladder", "y": 270 }
-    }
-}

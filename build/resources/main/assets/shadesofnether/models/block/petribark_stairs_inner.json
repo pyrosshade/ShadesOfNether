@@ -1,8 +1,0 @@
-{
-    "parent": "block/inner_stairs",
-    "textures": {
-        "bottom": "shadesofnether:block/petribark_planks",
-        "top": "shadesofnether:block/petribark_planks",
-        "side": "shadesofnether:block/petribark_planks"
-    }
-}
