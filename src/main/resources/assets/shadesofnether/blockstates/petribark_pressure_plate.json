@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "powered=false": { "model": "shadesofnether:block/petribark_pressure_plate" },
+        "powered=true": { "model": "shadesofnether:block/petribark_pressure_plate_down" }
+    }
+}

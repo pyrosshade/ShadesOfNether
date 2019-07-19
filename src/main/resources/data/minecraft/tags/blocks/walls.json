@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "shadesofnether:asherrack_brick_wall",
+    "shadesofnether:asherrack_fort_brick_wall",
+    "shadesofnether:granite_brick_wall",
+    "shadesofnether:granite_fort_brick_wall"
+  ]
+}

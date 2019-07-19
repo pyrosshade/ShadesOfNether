@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "shadesofnether:petribark_stairs",
+    "shadesofnether:asherrack_brick_stairs",
+    "shadesofnether:asherrack_fort_brick_stairs",
+    "shadesofnether:granite_brick_stairs",
+    "shadesofnether:granite_fort_brick_stairs"
+  ]
+}

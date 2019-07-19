@@ -1,11 +1,17 @@
 package com.shade.pyros.ShadesOfNether.Blocks;
 
-import net.minecraft.block.Blocks;
+import com.shade.pyros.ShadesOfNether.Common.Materials;
+
 import net.minecraft.block.FenceBlock;
+import net.minecraft.block.SoundType;
 
 public class PetribarkFence extends FenceBlock {
 	public PetribarkFence() {
-		super(Properties.from(Blocks.ACACIA_FENCE));
+		super(Properties
+				.create(Materials.PETRIBARK_WOOD)
+				.hardnessAndResistance(0.45F)
+				.sound(SoundType.WOOD)
+				);
 		setRegistryName("petribark_fence");
 	}
 }

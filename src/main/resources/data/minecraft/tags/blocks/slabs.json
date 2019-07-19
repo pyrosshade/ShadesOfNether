@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "shadesofnether:petribark_slab",
+    "shadesofnether:asherrack_brick_slab",
+    "shadesofnether:asherrack_fort_brick_slab",
+    "shadesofnether:granite_brick_slab",
+    "shadesofnether:granite_fort_brick_slab"
+  ]
+}

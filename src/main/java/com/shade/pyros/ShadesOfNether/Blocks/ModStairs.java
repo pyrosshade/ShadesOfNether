@@ -153,7 +153,8 @@ public class ModStairs extends Block implements IWaterLoggable {
       return this.modelBlock.tickRate(worldIn);
    }
 
-   public void onBlockAdded(BlockState p_220082_1_, World worldIn, BlockPos pos, BlockState p_220082_4_, boolean p_220082_5_) {
+   @SuppressWarnings("deprecation")
+public void onBlockAdded(BlockState p_220082_1_, World worldIn, BlockPos pos, BlockState p_220082_4_, boolean p_220082_5_) {
       if (p_220082_1_.getBlock() != p_220082_1_.getBlock()) {
          this.modelState.neighborChanged(worldIn, pos, Blocks.AIR, pos, false);
          this.modelBlock.onBlockAdded(this.modelState, worldIn, pos, p_220082_4_, false);
@@ -173,7 +174,8 @@ public class ModStairs extends Block implements IWaterLoggable {
       this.modelBlock.onEntityWalk(worldIn, pos, entityIn);
    }
 
-   public void tick(BlockState state, World worldIn, BlockPos pos, Random random) {
+   @SuppressWarnings("deprecation")
+public void tick(BlockState state, World worldIn, BlockPos pos, Random random) {
       this.modelBlock.tick(state, worldIn, pos, random);
    }
 
@@ -202,7 +204,8 @@ public class ModStairs extends Block implements IWaterLoggable {
     * returns its solidified counterpart.
     * Note that this method should ideally consider only the specific face passed in.
     */
-   public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos) {
+   @SuppressWarnings("deprecation")
+public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos) {
       if (stateIn.get(WATERLOGGED)) {
          worldIn.getPendingFluidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickRate(worldIn));
       }
@@ -301,6 +304,8 @@ public class ModStairs extends Block implements IWaterLoggable {
                return state.rotate(Rotation.CLOCKWISE_180);
             }
          }
+	default:
+		break;
       }
 
       return super.mirror(state, mirrorIn);
@@ -310,7 +315,8 @@ public class ModStairs extends Block implements IWaterLoggable {
       builder.add(FACING, HALF, SHAPE, WATERLOGGED);
    }
 
-   public IFluidState getFluidState(BlockState state) {
+   @SuppressWarnings("deprecation")
+public IFluidState getFluidState(BlockState state) {
       return state.get(WATERLOGGED) ? Fluids.WATER.getStillFluidState(false) : super.getFluidState(state);
    }
 

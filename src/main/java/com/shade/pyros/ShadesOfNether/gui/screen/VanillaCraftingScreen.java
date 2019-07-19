@@ -1,7 +1,8 @@
 package com.shade.pyros.ShadesOfNether.gui.screen;
 
 import com.mojang.blaze3d.platform.GlStateManager;
-import com.shade.pyros.ShadesOfNether.Containers.VanillaWorkBench;
+import com.shade.pyros.ShadesOfNether.Containers.ModVanillaCraftContainer;
+
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.util.ResourceLocation;
@@ -10,18 +11,20 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
-public class VanillaCraftingScreen extends ContainerScreen<VanillaWorkBench> {
+public class VanillaCraftingScreen extends ContainerScreen<ModVanillaCraftContainer>{
     private static final ResourceLocation CRAFTING_TABLE_GUI_TEXTURES = new ResourceLocation("textures/gui/container/crafting_table.png");
+    
 
-    public VanillaCraftingScreen(VanillaWorkBench p_i51094_1_, PlayerInventory p_i51094_2_, ITextComponent p_i51094_3_) {
+    public VanillaCraftingScreen(ModVanillaCraftContainer p_i51094_1_, PlayerInventory p_i51094_2_, ITextComponent p_i51094_3_) {
         super(p_i51094_1_, p_i51094_2_, p_i51094_3_);
     }
 
     public void render(int p_render_1_, int p_render_2_, float p_render_3_) {
-        this.renderBackground();
-        super.render(p_render_1_, p_render_2_, p_render_3_);
-        this.renderHoveredToolTip(p_render_1_, p_render_2_);
+       this.renderBackground();
+       super.render(p_render_1_, p_render_2_, p_render_3_);
+       this.renderHoveredToolTip(p_render_1_, p_render_2_);
     }
+
 
     protected void drawGuiContainerForegroundLayer(int p_146979_1_, int p_146979_2_) {
         this.font.drawString(this.title.getFormattedText(), 28.0F, 6.0F, 4210752);
@@ -40,4 +43,5 @@ public class VanillaCraftingScreen extends ContainerScreen<VanillaWorkBench> {
     public void removed() {
         super.removed();
     }
+
 }

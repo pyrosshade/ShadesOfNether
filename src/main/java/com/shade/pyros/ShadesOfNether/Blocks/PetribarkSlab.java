@@ -11,7 +11,8 @@ public class PetribarkSlab extends SlabBlock{
 		super(Properties
 				.create(Materials.PETRIBARK_WOOD)
 				.hardnessAndResistance(0.45F)
-				.sound(SoundType.WOOD));
+				.sound(SoundType.WOOD)
+				);
 		setRegistryName("petribark_slab");
 	}
 

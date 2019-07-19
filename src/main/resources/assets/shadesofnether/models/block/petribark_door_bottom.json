@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom",
+    "textures": {
+        "bottom": "shadesofnether:block/petribark_door_bottom",
+        "top": "shadesofnether:block/petribark_door_top"
+    }
+}
