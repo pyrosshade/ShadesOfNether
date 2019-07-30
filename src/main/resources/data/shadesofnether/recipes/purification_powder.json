@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:gravel"
+    },
+    {
+      "item": "minecraft:gravel"
+    },
+    {
+      "item": "minecraft:ghast_tear"
+    },
+    {
+      "item": "minecraft:glowstone_dust"
+    }
+  ],
+  "result":
+  {
+    "item": "shadesofnether:purification_powder",
+	"count": 8
+  }
+}

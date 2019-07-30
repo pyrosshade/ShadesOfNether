@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PP",
+    "PP"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:netherrack"
+    }
+  },
+  "result": {
+    "item": "shadesofnether:polished_netherrack",
+    "count": 4
+  }
+}

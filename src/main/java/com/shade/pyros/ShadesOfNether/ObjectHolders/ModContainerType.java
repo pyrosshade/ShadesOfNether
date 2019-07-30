@@ -8,4 +8,6 @@ import net.minecraftforge.registries.ObjectHolder;
 public class ModContainerType {
 	@ObjectHolder("shadesofnether:vanilla_workbench")
 	public static final ContainerType<ModVanillaCraftContainer> VANILLA_WORKBENCH = null;
+	@ObjectHolder("shadesofnether:vanilla_sign")
+	public static final ContainerType<?> VANILLA_SIGN = null;
 }

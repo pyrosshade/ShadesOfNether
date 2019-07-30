@@ -1,0 +1,8 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "shadesofnether:block/polished_asherrack",
+        "top": "shadesofnether:block/polished_asherrack",
+        "side": "shadesofnether:block/polished_asherrack"
+    }
+}

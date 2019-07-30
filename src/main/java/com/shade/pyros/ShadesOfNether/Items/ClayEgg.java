@@ -1,6 +1,7 @@
 package com.shade.pyros.ShadesOfNether.Items;
 
 import com.shade.pyros.ShadesOfNether.ShadesOfNether;
+
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
 import net.minecraft.potion.EffectInstance;
@@ -15,8 +16,8 @@ public class ClayEgg extends Item{
 				.hunger(1)
 				.saturation(2)
 				.fastToEat()
-				.effect(new EffectInstance(Effects.POISON,2), .75f)
-				.effect(new EffectInstance(Effects.HUNGER,15), 1)
+				.effect(new EffectInstance(Effects.POISON,40), .75f)
+				.effect(new EffectInstance(Effects.HUNGER,300), 1)
 				.build()
 				)
 			);

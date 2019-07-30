@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSP",
+	"PSP"
+  ],
+  "key": {
+    "P": {
+      "item": "shadesofnether:andesite_fort_bricks"
+    },
+	"S": {
+	  "item": "minecraft:andesite"
+	}
+  },
+  "result": {
+    "item": "shadesofnether:andesite_fort_brick_fence",
+    "count": 6
+  }
+}

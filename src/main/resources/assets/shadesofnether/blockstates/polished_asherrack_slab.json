@@ -1,0 +1,8 @@
+
+{
+    "variants": {
+        "type=bottom": { "model": "shadesofnether:block/polished_asherrack_slab" },
+        "type=top": { "model": "shadesofnether:block/polished_asherrack_slab_top" },
+        "type=double": { "model": "shadesofnether:block/polished_asherrack" }
+    }
+}

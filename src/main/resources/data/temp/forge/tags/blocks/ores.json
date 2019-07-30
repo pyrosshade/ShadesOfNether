@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:ores/sunset_whewellite",
+    "#forge:ores/corundum"
+  ]
+}

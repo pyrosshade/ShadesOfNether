@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:soul_sand"
+    },
+    {
+      "item": "minecraft:soul_sand"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    },
+    {
+      "item": "minecraft:glowstone_dust"
+    }
+  ],
+  "result":
+  {
+    "item": "shadesofnether:corruption_powder",
+	"count": 8
+  }
+}

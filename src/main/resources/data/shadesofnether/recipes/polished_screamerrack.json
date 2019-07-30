@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PP",
+    "PP"
+  ],
+  "key": {
+    "P": {
+      "item": "shadesofnether:screamerrack"
+    }
+  },
+  "result": {
+    "item": "shadesofnether:polished_screamerrack",
+    "count": 4
+  }
+}

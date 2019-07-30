@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSP",
+	"PSP"
+  ],
+  "key": {
+    "P": {
+      "item": "shadesofnether:asherrack_bricks"
+    },
+	"S": {
+	  "item": "shadesofnether:asherrack"
+	}
+  },
+  "result": {
+    "item": "shadesofnether:asherrack_brick_fence",
+    "count": 6
+  }
+}

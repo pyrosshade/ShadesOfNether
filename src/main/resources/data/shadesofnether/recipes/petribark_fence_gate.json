@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "$#$",
+    "$#$"
+  ],
+  "key": {
+    "#": {
+      "item": "shadesofnether:petribark_planks"
+    },
+    "$":{
+      "tag": "minecraft:sticks"
+    }
+  },
+  "result": {
+    "item": "shadesofnether:petribark_fence_gate",
+    "count": 1
+  }
+}

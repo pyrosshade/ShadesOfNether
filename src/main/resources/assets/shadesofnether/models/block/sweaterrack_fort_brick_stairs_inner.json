@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "shadesofnether:block/sweaterrack_fort_bricks",
+        "top": "shadesofnether:block/sweaterrack_fort_bricks",
+        "side": "shadesofnether:block/sweaterrack_fort_bricks"
+    }
+}

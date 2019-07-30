@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSP",
+	"PSP"
+  ],
+  "key": {
+    "P": {
+      "item": "shadesofnether:screamerrack_bricks"
+    },
+	"S": {
+	  "item": "shadesofnether:screamerrack"
+	}
+  },
+  "result": {
+    "item": "shadesofnether:screamerrack_brick_fence",
+    "count": 6
+  }
+}

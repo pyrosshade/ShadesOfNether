@@ -2,7 +2,7 @@ package com.shade.pyros.ShadesOfNether.Containers;
 
 import java.util.Optional;
 
-import com.shade.pyros.ShadesOfNether.Blocks.PetribarkCraftingTable;
+import com.shade.pyros.ShadesOfNether.Blocks.Petribark.PetribarkCraftingTable;
 import com.shade.pyros.ShadesOfNether.ObjectHolders.ModContainerType;
 
 import net.minecraft.entity.player.PlayerEntity;

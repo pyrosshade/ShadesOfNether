@@ -1,18 +1,30 @@
 {
   "type": "minecraft:block",
-  "pools": 
-  [
+  "pools": [
     {
-      "name": "pool1",
       "rolls": 1,
-      "entries": 
-      [
-        {"type":"minecraft:item","name":"shadesofnether:petribark_slab"}
-      ],
-      "conditions": 
-      [
+      "entries": [
         {
-          "condition": "minecraft:survives_explosion"
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "shadesofnether:petribark_slab",
+                  "properties": {
+                    "type": "double"
+                  }
+                }
+              ],
+              "count": 2
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ],
+          "name": "shadesofnether:petribark_slab"
         }
       ]
     }

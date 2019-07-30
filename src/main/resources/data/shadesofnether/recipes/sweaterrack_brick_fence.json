@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSP",
+	"PSP"
+  ],
+  "key": {
+    "P": {
+      "item": "shadesofnether:sweaterrack_bricks"
+    },
+	"S": {
+	  "item": "shadesofnether:sweaterrack"
+	}
+  },
+  "result": {
+    "item": "shadesofnether:sweaterrack_brick_fence",
+    "count": 6
+  }
+}

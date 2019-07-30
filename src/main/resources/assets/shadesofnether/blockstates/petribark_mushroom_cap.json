@@ -19,22 +19,22 @@
             "apply": { "model": "shadesofnether:block/petribark_mushroom_cap", "x": 90, "uvlock": true }
         },
         {   "when": { "north": false },
-            "apply": { "model": "shadesofnether:block/petribark_mushroom_spores" }
+            "apply": { "model": "shadesofnether:block/petribark_mushroom_cap_spores" }
         },
         {   "when": { "east": false },
-            "apply": { "model": "shadesofnether:block/petribark_mushroom_spores", "y": 90, "uvlock": false }
+            "apply": { "model": "shadesofnether:block/petribark_mushroom_cap_spores", "y": 90, "uvlock": false }
         },
         {   "when": { "south": false },
-            "apply": { "model": "shadesofnether:block/petribark_mushroom_spores", "y": 180, "uvlock": false }
+            "apply": { "model": "shadesofnether:block/petribark_mushroom_cap_spores", "y": 180, "uvlock": false }
         },
         {   "when": { "west": false },
-            "apply": { "model": "shadesofnether:block/petribark_mushroom_spores", "y": 270, "uvlock": false }
+            "apply": { "model": "shadesofnether:block/petribark_mushroom_cap_spores", "y": 270, "uvlock": false }
         },
         {   "when": { "up": false },
-            "apply": { "model": "shadesofnether:block/petribark_mushroom_spores", "x": 270, "uvlock": false }
+            "apply": { "model": "shadesofnether:block/petribark_mushroom_cap_spores", "x": 270, "uvlock": false }
         },
         {   "when": { "down": false },
-            "apply": { "model": "shadesofnether:block/petribark_mushroom_spores", "x": 90, "uvlock": false }
+            "apply": { "model": "shadesofnether:block/petribark_mushroom_cap_spores", "x": 90, "uvlock": false }
         }
     ]
 }

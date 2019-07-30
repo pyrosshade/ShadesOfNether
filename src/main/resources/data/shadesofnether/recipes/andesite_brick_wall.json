@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+	"PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "shadesofnether:andesite_bricks"
+    }
+  },
+  "result": {
+    "item": "shadesofnether:andesite_brick_wall",
+    "count": 6
+  }
+}

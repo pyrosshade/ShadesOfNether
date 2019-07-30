@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "shadesofnether:block/andesite_bricks",
+        "top": "shadesofnether:block/andesite_bricks",
+        "side": "shadesofnether:block/andesite_bricks"
+    }
+}

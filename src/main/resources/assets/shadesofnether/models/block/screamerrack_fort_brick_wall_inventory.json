@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_inventory",
+    "textures": {
+        "wall": "shadesofnether:block/screamerrack_fort_bricks"
+    }
+}

@@ -1,8 +1,8 @@
 {
     "parent": "block/cube_bottom_top",
     "textures": {
-        "top": "shadesofnether:petribark_barrel_top",
-        "side": "shadesofnether:petribark_barrel_side",
-        "bottom": "shadesofnether:petribark_barrel_bottom"
+        "top": "shadesofnether:block/petribark_barrel_top",
+        "side": "shadesofnether:block/petribark_barrel_side",
+        "bottom": "shadesofnether:block/petribark_barrel_bottom"
     }
 }

@@ -1,0 +1,14 @@
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_slab",
+  "ingredients": [
+	{
+      "item": "shadesofnether:petribark_planks"
+	}
+  ],
+  "result": {
+    "item": "shadesofnether:petribark_button",
+    "count": 1
+  }
+}

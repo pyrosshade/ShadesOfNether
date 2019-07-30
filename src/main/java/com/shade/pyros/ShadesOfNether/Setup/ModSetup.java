@@ -13,6 +13,6 @@ public class ModSetup {
 			}
 	};
 	public void init() {
-		ShadesOfNetherWorldGen.SetupOreGeneration();
+		ShadesOfNetherWorldGen.setupGeneration();
 	}
 }

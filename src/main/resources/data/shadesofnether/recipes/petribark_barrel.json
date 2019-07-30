@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSP",
+    "P P",
+    "PSP"
+  ],
+  "key": {
+    "P": {
+      "item": "shadesofnether:petribark_planks"
+    },
+    "S": {
+      "item": "shadesofnether:petribark_slab"
+    }
+  },
+  "result": {
+    "item": "shadesofnether:petribark_barrel"
+  }
+}

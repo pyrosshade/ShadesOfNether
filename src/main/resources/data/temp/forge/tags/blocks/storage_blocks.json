@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:storage_blocks/sunset_whewellite",
+    "#forge:storage_blocks/corundum"
+  ]
+}

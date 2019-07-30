@@ -7,4 +7,6 @@ import net.minecraftforge.registries.ObjectHolder;
 public class ModSounds {
 	@ObjectHolder("shadesofnether:purify")
 	public static SoundEvent PURIFY = new SoundEvent(new ResourceLocation("shadesofnether:purify")).setRegistryName("purify");
+	@ObjectHolder("shadesofnether:corrupt")
+	public static SoundEvent CORRUPT = new SoundEvent(new ResourceLocation("shadesofnether:corrupt")).setRegistryName("corrupt");
 }

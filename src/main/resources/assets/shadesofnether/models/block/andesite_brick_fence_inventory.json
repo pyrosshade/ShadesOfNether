@@ -1,0 +1,6 @@
+{
+    "parent": "block/fence_inventory",
+    "textures": {
+        "texture": "shadesofnether:block/andesite_bricks"
+    }
+}

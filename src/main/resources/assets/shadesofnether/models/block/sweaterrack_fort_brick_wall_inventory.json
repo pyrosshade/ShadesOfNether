@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_inventory",
+    "textures": {
+        "wall": "shadesofnether:block/sweaterrack_fort_bricks"
+    }
+}

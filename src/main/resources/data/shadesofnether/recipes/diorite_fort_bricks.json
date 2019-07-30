@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PP",
+    "PP"
+  ],
+  "key": {
+    "P": {
+      "item": "shadesofnether:diorite_bricks"
+    }
+  },
+  "result": {
+    "item": "shadesofnether:diorite_fort_bricks",
+	"count": 4
+  }
+}

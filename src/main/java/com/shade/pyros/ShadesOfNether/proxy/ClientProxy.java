@@ -11,6 +11,7 @@ public class ClientProxy implements Proxy {
     @Override
     public void onClientSetup(FMLClientSetupEvent event) {
         ScreenManager.registerFactory(ModContainerType.VANILLA_WORKBENCH, VanillaCraftingScreen::new);
+        
     }
 
     @Override

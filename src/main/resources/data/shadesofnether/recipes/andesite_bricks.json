@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["PP","PP"],
+  "key": {"P": {"item": "minecraft:polished_andesite"}},
+  "result": {"item": "shadesofnether:andesite_bricks","count": 4}
+}

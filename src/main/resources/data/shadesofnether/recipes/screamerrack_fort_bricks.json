@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PP",
+    "PP"
+  ],
+  "key": {
+    "P": {
+      "item": "shadesofnether:screamerrack_bricks"
+    }
+  },
+  "result": {
+    "item": "shadesofnether:screamerrack_fort_bricks",
+	"count": 4
+  }
+}

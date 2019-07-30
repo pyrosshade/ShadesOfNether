@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "shadesofnether:block/stone_fort_brick_slab" },
+        "type=top": { "model": "shadesofnether:block/stone_fort_brick_slab_top" },
+        "type=double": { "model": "shadesofnether:block/stone_fort_bricks" }
+    }
+}

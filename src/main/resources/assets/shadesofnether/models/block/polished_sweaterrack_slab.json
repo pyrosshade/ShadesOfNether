@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "shadesofnether:block/polished_sweaterrack",
+        "top": "shadesofnether:block/polished_sweaterrack",
+        "side": "shadesofnether:block/polished_sweaterrack"
+    }
+}

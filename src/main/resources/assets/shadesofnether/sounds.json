@@ -2,5 +2,9 @@
 	"purify": {
 		"category": "block",
 		"sounds": [ "shadesofnether:boom" ]
+	},
+	"corrupt": {
+		"category": "block",
+		"sounds": [ "shadesofnether:soarynmoo" ]
 	}
 }

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSP",
+	"PSP"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:stone_bricks"
+    },
+	"S": {
+	  "item": "minecraft:cobblestone"
+	}
+  },
+  "result": {
+    "item": "shadesofnether:stone_brick_fence",
+    "count": 6
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  	"P  ",
+  	"PP ",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "shadesofnether:asherrack_bricks"
+    }
+  },
+  "result": {
+    "item": "shadesofnether:asherrack_brick_stairs",
+    "count": 4
+  }
+}

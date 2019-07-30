@@ -15,7 +15,7 @@ import net.minecraft.world.gen.placement.FrequencyConfig;
 import net.minecraft.world.gen.placement.Placement;
 
 public class NetherGeneration {
-	public static void SetupNetherGeneration() {
+	public static void setupNetherGeneration() {
 		Biomes.NETHER.addFeature(
 			Decoration.UNDERGROUND_DECORATION, 
 			Biome.createDecoratedFeature(
@@ -39,5 +39,6 @@ public class NetherGeneration {
 				IFeatureConfig.NO_FEATURE_CONFIG, 
 				Placement.COUNT_RANGE, 
 				new CountRangeConfig(10, 0, 0, 128)));
+		
 	}
 }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PP",
+    "PP"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:stone_bricks"
+    }
+  },
+  "result": {
+    "item": "shadesofnether:polished_stone",
+    "count": 4
+  }
+}
