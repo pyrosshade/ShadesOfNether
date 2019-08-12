@@ -16,14 +16,19 @@ import net.minecraft.block.HugeMushroomBlock;
 import net.minecraft.state.BooleanProperty;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.Direction;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.gen.GenerationSettings;
 import net.minecraft.world.gen.feature.BigMushroomFeatureConfig;
 import net.minecraft.world.gen.feature.Feature;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public class HugePetribarkMushroom extends Feature<BigMushroomFeatureConfig>{
+	public static Block ASHERRACK = ForgeRegistries.BLOCKS.getValue(new ResourceLocation("shadesofnether:asherrack"));
+	public static Block SCREAMERRACK = ForgeRegistries.BLOCKS.getValue(new ResourceLocation("shadesofnether:screamerrack"));
+	public static Block SWEATERRACK = ForgeRegistries.BLOCKS.getValue(new ResourceLocation("shadesofnether:sweaterrack"));
 	public HugePetribarkMushroom(Function<Dynamic<?>, ? extends BigMushroomFeatureConfig> deserializer)
     {
         super(deserializer);
@@ -41,7 +46,15 @@ public class HugePetribarkMushroom extends Feature<BigMushroomFeatureConfig>{
 		int j = pos.getY();
 		if (j >= 1 && j + mushHeight + 1 < worldIn.getWorld().getDimension().getHeight()) {
 			Block block = worldIn.getBlockState(pos.down()).getBlock();
-			if (!Block.isDirt(block) && block != Blocks.GRASS_BLOCK && block != Blocks.MYCELIUM && block != Blocks.NETHERRACK && block != Blocks.NETHER_QUARTZ_ORE && block != Blocks.SOUL_SAND) {
+			if (!Block.isDirt(block) 
+					&& block != Blocks.GRASS_BLOCK 
+					&& block != Blocks.MYCELIUM 
+					&& block != Blocks.NETHERRACK 
+					&& block != Blocks.NETHER_QUARTZ_ORE 
+					&& block != Blocks.SOUL_SAND
+					&& block != ASHERRACK
+					&& block != SCREAMERRACK
+					&& block != SWEATERRACK) {
 					this.setBlockState(worldIn, pos, ModBlocks.PETRIBARK_MUSHROOM.getDefaultState());
 					ShadesOfNether.debug.log(Level.INFO,"No room in chosen growth direction, putting back the shrooms.");
 					return false;

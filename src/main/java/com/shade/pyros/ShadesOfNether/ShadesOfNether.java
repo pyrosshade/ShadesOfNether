@@ -1,20 +1,13 @@
 package com.shade.pyros.ShadesOfNether;
 
+import java.lang.reflect.Field;
+import java.util.Locale;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.shade.pyros.ShadesOfNether.Blocks.Asherth;
 import com.shade.pyros.ShadesOfNether.Blocks.ClayCacoon;
-import com.shade.pyros.ShadesOfNether.Blocks.CorundumBlock;
-import com.shade.pyros.ShadesOfNether.Blocks.CorundumOreAsher;
-import com.shade.pyros.ShadesOfNether.Blocks.CorundumOreNether;
-import com.shade.pyros.ShadesOfNether.Blocks.CorundumOreScreamer;
-import com.shade.pyros.ShadesOfNether.Blocks.CorundumOreSweater;
-import com.shade.pyros.ShadesOfNether.Blocks.SunsetWhewelliteBlock;
-import com.shade.pyros.ShadesOfNether.Blocks.SunsetWhewelliteOreAsher;
-import com.shade.pyros.ShadesOfNether.Blocks.SunsetWhewelliteOreNether;
-import com.shade.pyros.ShadesOfNether.Blocks.SunsetWhewelliteOreScreamer;
-import com.shade.pyros.ShadesOfNether.Blocks.SunsetWhewelliteOreSweater;
 import com.shade.pyros.ShadesOfNether.Blocks.Andesite.AndesiteBrickFence;
 import com.shade.pyros.ShadesOfNether.Blocks.Andesite.AndesiteBrickSlab;
 import com.shade.pyros.ShadesOfNether.Blocks.Andesite.AndesiteBrickStairs;
@@ -67,6 +60,16 @@ import com.shade.pyros.ShadesOfNether.Blocks.Nether.NetherrackBricks;
 import com.shade.pyros.ShadesOfNether.Blocks.Nether.PolishedNetherrack;
 import com.shade.pyros.ShadesOfNether.Blocks.Nether.PolishedNetherrackSlab;
 import com.shade.pyros.ShadesOfNether.Blocks.Nether.PolishedNetherrackStairs;
+import com.shade.pyros.ShadesOfNether.Blocks.Ores.CorundumBlock;
+import com.shade.pyros.ShadesOfNether.Blocks.Ores.CorundumOreAsher;
+import com.shade.pyros.ShadesOfNether.Blocks.Ores.CorundumOreNether;
+import com.shade.pyros.ShadesOfNether.Blocks.Ores.CorundumOreScreamer;
+import com.shade.pyros.ShadesOfNether.Blocks.Ores.CorundumOreSweater;
+import com.shade.pyros.ShadesOfNether.Blocks.Ores.SunsetWhewelliteBlock;
+import com.shade.pyros.ShadesOfNether.Blocks.Ores.SunsetWhewelliteOreAsher;
+import com.shade.pyros.ShadesOfNether.Blocks.Ores.SunsetWhewelliteOreNether;
+import com.shade.pyros.ShadesOfNether.Blocks.Ores.SunsetWhewelliteOreScreamer;
+import com.shade.pyros.ShadesOfNether.Blocks.Ores.SunsetWhewelliteOreSweater;
 import com.shade.pyros.ShadesOfNether.Blocks.Petribark.PetribarkBarrel;
 import com.shade.pyros.ShadesOfNether.Blocks.Petribark.PetribarkButton;
 import com.shade.pyros.ShadesOfNether.Blocks.Petribark.PetribarkCraftingTable;
@@ -121,7 +124,6 @@ import com.shade.pyros.ShadesOfNether.Blocks.Sweaterrack.SweaterrackFortBrickSla
 import com.shade.pyros.ShadesOfNether.Blocks.Sweaterrack.SweaterrackFortBrickStairs;
 import com.shade.pyros.ShadesOfNether.Blocks.Sweaterrack.SweaterrackFortBrickWall;
 import com.shade.pyros.ShadesOfNether.Blocks.Sweaterrack.SweaterrackFortBricks;
-import com.shade.pyros.ShadesOfNether.Common.EffectActions;
 import com.shade.pyros.ShadesOfNether.Containers.ModVanillaCraftContainer;
 import com.shade.pyros.ShadesOfNether.Items.ClayEgg;
 import com.shade.pyros.ShadesOfNether.Items.CorruptionPowder;
@@ -134,6 +136,13 @@ import com.shade.pyros.ShadesOfNether.ObjectHolders.ModEntities;
 import com.shade.pyros.ShadesOfNether.ObjectHolders.ModSounds;
 import com.shade.pyros.ShadesOfNether.Setup.ModSetup;
 import com.shade.pyros.ShadesOfNether.TileEntities.ModBarrelTE;
+import com.shade.pyros.ShadesOfNether.Util.EffectActions;
+import com.shade.pyros.ShadesOfNether.World.Biomes.SONBiomeProvider;
+import com.shade.pyros.ShadesOfNether.World.Biomes.SONBiomeProviderSettings;
+import com.shade.pyros.ShadesOfNether.World.Biomes.SONBiomes;
+import com.shade.pyros.ShadesOfNether.World.Biomes.SONGenSettings;
+import com.shade.pyros.ShadesOfNether.World.Features.Features;
+import com.shade.pyros.ShadesOfNether.clientonly.renders.ModRenderRegistry;
 import com.shade.pyros.ShadesOfNether.proxy.ClientProxy;
 import com.shade.pyros.ShadesOfNether.proxy.CommonProxy;
 import com.shade.pyros.ShadesOfNether.proxy.Proxy;
@@ -148,8 +157,18 @@ import net.minecraft.item.SignItem;
 import net.minecraft.tileentity.SignTileEntity;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.SoundEvent;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.world.IWorld;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.gen.ChunkGenerator;
+import net.minecraft.world.gen.NetherChunkGenerator;
+import net.minecraft.world.gen.NetherGenSettings;
+import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.structure.Structure;
+import net.minecraft.world.gen.feature.structure.Structures;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.event.world.WorldEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
@@ -171,6 +190,7 @@ public class ShadesOfNether {
 	public ShadesOfNether() {
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientRegistries);
+
 		
 		MinecraftForge.EVENT_BUS.register(this);
 	}
@@ -182,8 +202,62 @@ public class ShadesOfNether {
 	}
 	private void clientRegistries(final FMLClientSetupEvent event) {
         debug.info(modid + " : client setup");
+        ModRenderRegistry.registryEntityRenders();
         proxy.onClientSetup(event);
 	}
+	
+	@SubscribeEvent
+	public void onWorldLoad(WorldEvent.Load event) {
+		
+		debug.info("WorldLoad Event");
+		IWorld world = event.getWorld();
+		ChunkGenerator<?> chunkGen = world.getChunkProvider().getChunkGenerator();
+		Registry.register(Registry.STRUCTURE_FEATURE, "asher_mine".toLowerCase(Locale.ROOT), Features.ASHER_MINE);
+		Feature.STRUCTURES.put("asher_mine", Features.ASHER_MINE);
+		
+		if(chunkGen instanceof NetherChunkGenerator)
+		{		
+			NetherChunkGenerator obj = (NetherChunkGenerator) chunkGen;
+			SONGenSettings netherGenSettings = new SONGenSettings();
+			Class<? extends NetherChunkGenerator> clapp = obj.getClass();	
+			Class<?> duper = obj.getClass().getSuperclass().getSuperclass();
+			Field[] temp =  clapp.getDeclaredFields();
+			SONBiomeProviderSettings settings = new SONBiomeProviderSettings();
+
+			settings.setWorldInfo(world.getWorldInfo());
+			settings.setGeneratorSettings(netherGenSettings);
+			
+			for(Field fie : temp ) {
+				debug.info(fie.getName());
+			}
+			Field[] tempta  = duper.getDeclaredFields();
+			
+			for(Field fo : tempta) {
+				debug.info(fo.getName());
+			}
+			
+			Field fold;
+			try {
+				fold = duper.getDeclaredField("biomeProvider");
+				fold.setAccessible(true);
+				fold.set(obj, new SONBiomeProvider(settings));
+			} catch (NoSuchFieldException e) {
+				debug.info("Are you sure you installed things correctly? I couldn't find what i needed");
+				e.printStackTrace();
+			} catch (SecurityException e) {
+				debug.info("Oh uh, this is kinda ackward");
+				e.printStackTrace();
+			} catch (IllegalArgumentException e) {
+				debug.info("Why are you giving me this? I don't want this. This is illegal you know.");
+				e.printStackTrace();
+			} catch (IllegalAccessException e) {
+				debug.info("Not allowed. Stop it. Don't do that thing. You know what thing. The thing you did. Don't.");
+				e.printStackTrace();
+			}
+		}
+		
+	}
+	
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 	public static class RegistryEvents{
 		@SubscribeEvent
@@ -460,6 +534,10 @@ public class ShadesOfNether {
 			event.getRegistry().register(new BlockItem(ModBlocks.SWEATERRACK_FORT_BRICK_SLAB, properties).setRegistryName("sweaterrack_fort_brick_slab"));
 			event.getRegistry().register(new BlockItem(ModBlocks.SWEATERRACK_FORT_BRICK_STAIRS, properties).setRegistryName("sweaterrack_fort_brick_stairs"));
 			event.getRegistry().register(new BlockItem(ModBlocks.SWEATERRACK_FORT_BRICK_WALL, properties).setRegistryName("sweaterrack_fort_brick_wall"));
+			
+			//Spawneggs
+			ModEntities.registerEntitySpawnEggs(event);
+			
 			//Item items
 			event.getRegistry().register(new ClayEgg());
 			event.getRegistry().register(new PetribarkStick());
@@ -478,6 +556,8 @@ public class ShadesOfNether {
 		public static void registerEntities(final RegistryEvent.Register<EntityType<?>> event)
 		{
 			event.getRegistry().register(ModEntities.CLAYSPIDER);
+			
+			ModEntities.registerEntityWorldSpawns();
 		}
 		@SubscribeEvent
 		public static void registerSounds(RegistryEvent.Register<SoundEvent> event){
@@ -497,5 +577,10 @@ public class ShadesOfNether {
 					.build(null)
 					.setRegistryName("petribark_sign"));
 		}
+		@SubscribeEvent
+		public static void onRegisterBiome(final RegistryEvent.Register<Biome> event){
+			event.getRegistry().register(SONBiomes.ASHER);
+		}
+		
 	}
 }

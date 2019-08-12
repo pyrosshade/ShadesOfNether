@@ -1,4 +1,4 @@
-package com.shade.pyros.ShadesOfNether.Blocks;
+package com.shade.pyros.ShadesOfNether.Blocks.Ores;
 
 import com.shade.pyros.ShadesOfNether.Common.Materials;
 
@@ -7,16 +7,15 @@ import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
 import net.minecraftforge.common.ToolType;
 
-public class SunsetWhewelliteOreAsher extends Block{
+public class CorundumOreSweater extends Block{
 
-	public SunsetWhewelliteOreAsher() {
+	public CorundumOreSweater() {
 		super(Properties
-				.create(Materials.ASHERRACK_STONE)
+				.create(Materials.SWEATERRACK_STONE)
 				.hardnessAndResistance(3.0F, 3.0F)
 				);
-		setRegistryName("sunset_whewellite_ore_asherrack");
+		setRegistryName("corundum_ore_sweaterrack");
 	}
-
 	@Override
 	public BlockRenderType getRenderType(BlockState state) {
 		return BlockRenderType.MODEL;
@@ -24,7 +23,7 @@ public class SunsetWhewelliteOreAsher extends Block{
 
 	@Override
 	public int getHarvestLevel(BlockState state) {
-		return 1;
+		return 2;
 	}
 	@Override
 	public ToolType getHarvestTool(BlockState state) {

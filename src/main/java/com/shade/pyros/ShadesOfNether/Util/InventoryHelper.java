@@ -1,4 +1,4 @@
-package com.shade.pyros.ShadesOfNether.Common;
+package com.shade.pyros.ShadesOfNether.Util;
 
 import java.util.Random;
 

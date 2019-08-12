@@ -1,4 +1,4 @@
-package com.shade.pyros.ShadesOfNether.Blocks;
+package com.shade.pyros.ShadesOfNether.Blocks.Ores;
 
 import com.shade.pyros.ShadesOfNether.Common.Materials;
 

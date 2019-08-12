@@ -2,6 +2,7 @@ package com.shade.pyros.ShadesOfNether.Setup;
 
 import com.shade.pyros.ShadesOfNether.ObjectHolders.ModBlocks;
 import com.shade.pyros.ShadesOfNether.World.ShadesOfNetherWorldGen;
+import com.shade.pyros.ShadesOfNether.World.Biomes.SONBiomes;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -14,5 +15,6 @@ public class ModSetup {
 	};
 	public void init() {
 		ShadesOfNetherWorldGen.setupGeneration();
+		SONBiomes.registerBiomes();
 	}
 }

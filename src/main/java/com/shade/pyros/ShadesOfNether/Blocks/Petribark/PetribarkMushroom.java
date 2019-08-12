@@ -2,6 +2,7 @@ package com.shade.pyros.ShadesOfNether.Blocks.Petribark;
 
 import java.util.Random;
 
+import com.shade.pyros.ShadesOfNether.ObjectHolders.ModBlocks;
 import com.shade.pyros.ShadesOfNether.World.Features.Features;
 
 import net.minecraft.block.Block;
@@ -12,6 +13,7 @@ import net.minecraft.block.IGrowable;
 import net.minecraft.state.IntegerProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.properties.BlockStateProperties;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
@@ -22,15 +24,16 @@ import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.BigMushroomFeatureConfig;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraftforge.common.ToolType;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public class PetribarkMushroom extends BushBlock implements IGrowable{
 
 	protected static final VoxelShape SHAPE = Block.makeCuboidShape(4.0D, 0.0D, 4.0D, 12.0D, 15.0D, 12.0D);
-	   public static final IntegerProperty STAGE = BlockStateProperties.STAGE_0_1;
+	public static final IntegerProperty STAGE = BlockStateProperties.STAGE_0_1;
 
 	public PetribarkMushroom() {
 		super(Properties.from(Blocks.BROWN_MUSHROOM));
-	      this.setDefaultState(this.stateContainer.getBaseState().with(STAGE, Integer.valueOf(0)));
+		this.setDefaultState(this.stateContainer.getBaseState().with(STAGE, Integer.valueOf(0)));
 		setRegistryName("petribark_mushroom");
 	}
 
@@ -85,7 +88,14 @@ public class PetribarkMushroom extends BushBlock implements IGrowable{
 		BlockPos blockpos = pos.down();
 		BlockState blockstate = worldIn.getBlockState(blockpos);
 		Block block = blockstate.getBlock();
-		if (block != Blocks.MYCELIUM && block != Blocks.PODZOL && block != Blocks.NETHERRACK && block != Blocks.NETHER_QUARTZ_ORE && block != Blocks.SOUL_SAND) {
+		if (block != Blocks.MYCELIUM 
+				&& block != Blocks.PODZOL 
+				&& block != Blocks.NETHERRACK 
+				&& block != Blocks.NETHER_QUARTZ_ORE 
+				&& block != Blocks.SOUL_SAND
+				&& block != ForgeRegistries.BLOCKS.getValue(ModBlocks.ASHERRACK.getRegistryName())
+				&& block != ForgeRegistries.BLOCKS.getValue(ModBlocks.SCREAMERRACK.getRegistryName())
+				&& block != ForgeRegistries.BLOCKS.getValue(ModBlocks.SWEATERRACK.getRegistryName())) {
 			return worldIn.getLightSubtracted(pos, 0) < 13 && blockstate.canSustainPlant(worldIn, blockpos, net.minecraft.util.Direction.UP, this);
 		} else {
 			return true;

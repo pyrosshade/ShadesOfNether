@@ -1,19 +1,20 @@
-package com.shade.pyros.ShadesOfNether.Blocks;
+package com.shade.pyros.ShadesOfNether.Blocks.Ores;
 
+import com.shade.pyros.ShadesOfNether.Common.Materials;
+
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialColor;
 import net.minecraftforge.common.ToolType;
 
-public class SunsetWhewelliteBlock extends Block{
-	public SunsetWhewelliteBlock() {
+public class SunsetWhewelliteOreNether extends Block{
+
+	public SunsetWhewelliteOreNether() {
 		super(Properties
-				.create(Material.ROCK, MaterialColor.ORANGE_TERRACOTTA)
+				.create(Materials.NETHERRACK_STONE)
 				.hardnessAndResistance(3.0F, 3.0F)
 				);
-		setRegistryName("sunset_whewellite_block");
+		setRegistryName("sunset_whewellite_ore_nether");
 	}
 
 	@Override
@@ -23,7 +24,7 @@ public class SunsetWhewelliteBlock extends Block{
 
 	@Override
 	public int getHarvestLevel(BlockState state) {
-		return 2;
+		return 1;
 	}
 	@Override
 	public ToolType getHarvestTool(BlockState state) {

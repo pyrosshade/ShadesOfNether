@@ -1,4 +1,4 @@
-package com.shade.pyros.ShadesOfNether.Blocks;
+package com.shade.pyros.ShadesOfNether.Blocks.Ores;
 
 import com.shade.pyros.ShadesOfNether.Common.Materials;
 
@@ -7,13 +7,14 @@ import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
 import net.minecraftforge.common.ToolType;
 
-public class CorundumOreAsher extends Block{
-	public CorundumOreAsher() {
+public class CorundumOreScreamer extends Block{
+
+	public CorundumOreScreamer() {
 		super(Properties
-				.create(Materials.ASHERRACK_STONE)
+				.create(Materials.SCREAMERRACK_STONE)
 				.hardnessAndResistance(3.0F, 3.0F)
 				);
-		setRegistryName("corundum_ore_asherrack");
+		setRegistryName("corundum_ore_screamerrack");
 	}
 
 	@Override

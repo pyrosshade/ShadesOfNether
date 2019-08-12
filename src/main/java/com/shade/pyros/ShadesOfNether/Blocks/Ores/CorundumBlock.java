@@ -1,20 +1,19 @@
-package com.shade.pyros.ShadesOfNether.Blocks;
-
-import com.shade.pyros.ShadesOfNether.Common.Materials;
+package com.shade.pyros.ShadesOfNether.Blocks.Ores;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraftforge.common.ToolType;
 
-public class CorundumOreNether extends Block{
-
-	public CorundumOreNether() {
+public class CorundumBlock extends Block{
+	public CorundumBlock() {
 		super(Properties
-				.create(Materials.NETHERRACK_STONE)
+				.create(Material.ROCK, MaterialColor.PURPLE)
 				.hardnessAndResistance(3.0F, 3.0F)
 				);
-		setRegistryName("corundum_ore_nether");
+		setRegistryName("corundum_block");
 	}
 
 	@Override

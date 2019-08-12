@@ -1,21 +1,21 @@
-package com.shade.pyros.ShadesOfNether.Blocks;
+package com.shade.pyros.ShadesOfNether.Blocks.Ores;
 
-import com.shade.pyros.ShadesOfNether.Common.Materials;
-
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraftforge.common.ToolType;
 
-public class CorundumOreSweater extends Block{
-
-	public CorundumOreSweater() {
+public class SunsetWhewelliteBlock extends Block{
+	public SunsetWhewelliteBlock() {
 		super(Properties
-				.create(Materials.SWEATERRACK_STONE)
+				.create(Material.ROCK, MaterialColor.ORANGE_TERRACOTTA)
 				.hardnessAndResistance(3.0F, 3.0F)
 				);
-		setRegistryName("corundum_ore_sweaterrack");
+		setRegistryName("sunset_whewellite_block");
 	}
+
 	@Override
 	public BlockRenderType getRenderType(BlockState state) {
 		return BlockRenderType.MODEL;
